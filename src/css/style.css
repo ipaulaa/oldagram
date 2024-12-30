@@ -36,9 +36,12 @@ main {
   justify-content: center;
   align-items: center;
   gap: 25px;
+
+  margin-bottom: 25px;
 }
 
 section {
+  width: 100%;
   background: #fff;
 }
 
@@ -64,7 +67,7 @@ section {
 }
 
 .post {
-  cursor: pointer;
+  width: 100%;
 }
 
 .post-footer {
