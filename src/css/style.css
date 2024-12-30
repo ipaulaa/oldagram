@@ -1,4 +1,7 @@
 body {
+  color: #000;
+  background-color: #EDEDED;
+
   font-family: "Source Sans 3", sans-serif;
 }
 
@@ -10,6 +13,7 @@ body {
 
 header {
   padding: 16px;
+  background-color: #fff;
   border-bottom: 1px solid #c6c6c6;
 
   display: flex;
@@ -24,4 +28,72 @@ header {
   width: 34px;
   height: 34px;
   border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+section {
+  background: #fff;
+}
+
+.post-info {
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.user,
+.likes,
+.user-comment {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+.location {
+  font-size: 0.75rem;
+  line-height: 0.938rem;
+}
+
+.post-footer {
+  padding: 22px 10px 16px;
+}
+
+.reactions {
+  width: 90px;
+  margin-bottom: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ion-icon {
+  font-size: 26px;
+  --ionicon-stroke-width: 42px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ion-icon:hover,
+ion-icon:focus {
+  color: #119ac7;
+}
+
+ion-icon[name="heart-outline"]:hover,
+ion-icon[name="heart-outline"]:focus {
+  color: #ce3535;
+}
+
+.comment {
+  font-size: 0.8125rem;
+  line-height: 1rem;
 }
