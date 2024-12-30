@@ -63,13 +63,20 @@ section {
   line-height: 0.938rem;
 }
 
+.post {
+  cursor: pointer;
+}
+
 .post-footer {
   padding: 22px 10px 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .reactions {
   width: 90px;
-  margin-bottom: 12px;
 
   display: flex;
   justify-content: space-between;
