@@ -52,3 +52,12 @@ likeBtns.forEach(likeBtn => {
     likesEl.textContent = `${likesAmount + 1}`;
   });
 });
+
+const posts = document.querySelectorAll(".post");
+posts.forEach(post => {
+  post.addEventListener("dblclick", () => {
+    const likesEl = post.parentNode.querySelector(".likes span");
+    const likesAmount = Number(likesEl.textContent);
+    likesEl.textContent = `${likesAmount + 1}`;
+  });
+});
